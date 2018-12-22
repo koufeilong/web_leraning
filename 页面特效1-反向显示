@@ -1,11 +1,21 @@
 <!DOCTYPE html>
+<!--本例的重点是dir属性，控制文本的显示属性-->
 <html dir="rtl">
 <meta charset="utf-8">
 <head>
     <title>标题页</title>
+    
+<!-- 页面自动最大化 -->
+    <script type="text/javascript">
+        self.moveTo(0,0);
+        self.resizeTo(screen.availWidth,screen.availHeight);
+    </script>
+
 </head>
+
 <body>
-这是一段伟大的历史<br>
+这是一段伟大的历史<br />
 来自全世界的瞩目和掌声
 </body>
+
 </html>
