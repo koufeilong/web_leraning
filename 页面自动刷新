@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<!--本例的重点是meta元素，其属性“HTTP-EQUIV”设置为refresh属性时，会自动刷新当前页面，此属性包括两个重要的设置，content和URL。content表示时间间隔，URL表示刷新后的页面地址-->
+<meta charset="utf-8" http-equiv="refresh" content="3;URL=http://www.baidu.com">
+<head>
+    <title>标题页</title>
+
+    <script type="text/javascript" language="javascript">
+        function back()
+        {
+            history.go(-1); //后退一页
+        }
+        function forward()
+        {
+            history.go(+1);
+        }
+        function refresh()
+        {
+            history.go(-0);
+        }
+    </script>
+</head>
+<body>
+<input type=button value=后退 onclick="back()">
+<input type=button value=前进 onclick="forward()">
+<input type=button value=刷新 onclick="refresh()"
+</body>
+</html>
